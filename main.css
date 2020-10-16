@@ -24,23 +24,31 @@ header span{
     text-align: center;
     margin-right: 40%;
 }
-.h{
+.ham{
+    cursor: pointer;
+    left: 0.3em;
+    top: 0.2em;
+    width: 50px;
     position: absolute;
-    top: 18%;
-    display: flex;
-    width: 100%;
-    justify-content: center;
 }
-.h i{
-    margin: 20%;
-    font-size: 100px;
-    z-index: 2;
+.ham img{
+    top: 0.2em;
+    cursor: pointer;
+    width: 50px;
+}
+.h{
+    width: 300px;
+    position: relative;
+    left: 90px;
+    display: flex;
+    justify-content: center;
 }
 nav{
     margin-top: 12vh;
     z-index: 2;
     display: block;
     width: 100%;
+    height: 90%;
     position: fixed;
     font-family: 'Mulish', sans-serif;
     transition: ease-in 0.5s;
@@ -120,23 +128,26 @@ table, td, th, tr{
 }
 @media only screen and (max-width: 1050px) {
     nav{
-        top: 12vh;
         z-index: 2;
         min-width: 100%;
         position: fixed;
-        height: 88vh;
+        height: 100%;
     }
     header{
-        z-index: 2;
+        z-index: 3;
+        font-size: 3em;
     }
-    header i{
+    .ham img{
+        z-index: 2;
+        top: 0.2em;
         cursor: pointer;
+        width: 50px;
     }
     nav ul{
         display: flex;
         flex-direction: column;
         width: 40%;
-        height: 88vh;
+        height: 90%;
         text-align: center;
         align-items: center;
         padding: 0%;
@@ -165,7 +176,7 @@ table, td, th, tr{
     .nav-closed{
         transform: translateX(-50%);
     }
-    .nav-open{
-
+    .footer{
+        font-size: 5vw;
     }
 }
