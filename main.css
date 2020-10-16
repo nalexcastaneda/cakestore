@@ -137,6 +137,10 @@ table, td, th, tr{
         z-index: 3;
         font-size: 3em;
     }
+    main .text{
+        margin: 12vh 5vw 5vh 5vw;
+        padding: 30px;
+    }
     .ham img{
         z-index: 2;
         top: 0.2em;
@@ -146,7 +150,7 @@ table, td, th, tr{
     nav ul{
         display: flex;
         flex-direction: column;
-        width: 40%;
+        width: 50%;
         height: 90%;
         text-align: center;
         align-items: center;
