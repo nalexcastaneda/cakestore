@@ -1,14 +1,15 @@
- 
+/* Reset all styles to 0 */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+/* Header fixed position and styling */
 header{
     top: 0%;
     position: fixed;
-    display: block;
+    display: flex;
     min-height: 50px;
     height: 12vh;
     background-color: rgb(48, 35, 27);
@@ -17,25 +18,20 @@ header{
     font-size: 4vw;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
     z-index: 2;
 }
-header span{
-    text-align: center;
-    margin-right: 40%;
-}
+/* Hamburger button position */
 .ham{
-    cursor: pointer;
     left: 0.3em;
-    top: 0.2em;
+    top: 0.4em;
     width: 50px;
     position: absolute;
 }
 .ham img{
-    top: 0.2em;
-    cursor: pointer;
+    top: 0.4em;
     width: 50px;
 }
+/* Header title left spacing for hamburger button*/
 .h{
     width: 300px;
     position: relative;
@@ -43,6 +39,7 @@ header span{
     display: flex;
     justify-content: center;
 }
+/* Navigation bar styles */
 nav{
     margin-top: 12vh;
     z-index: 2;
@@ -84,15 +81,17 @@ nav li a:hover{
     linear-gradient(45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;
     color: white;
 }
-
+/* Background cupcakes image */
 body{
     background: url(images/bg1.png);
 }
+/* Main as content wrapper */
 main{
     margin-top: 10%;
     position: absolute;
     z-index: 0;
 }
+/* Text container */
 main .text{
     height: fit-content;
     position: relative;
@@ -106,6 +105,7 @@ main .text{
     border-radius: 20px;
     z-index: 0;
 }
+/* Nutrition facts table */
 table, td, th, tr{
     border: solid;
     border-width: thin;
@@ -113,6 +113,7 @@ table, td, th, tr{
     border-collapse: collapse;
     padding: 5px;
 }
+/* Footer styles */
 .footer{
     position: absolute;
     width: 100%;
@@ -126,7 +127,9 @@ table, td, th, tr{
     align-items: center;
     justify-content: center;
 }
-@media only screen and (max-width: 1050px) {
+/* Media query for <700px displays */
+@media only screen and (max-width: 700px) {
+    /* Left Navbar positioning */
     nav{
         z-index: 2;
         min-width: 100%;
@@ -150,7 +153,7 @@ table, td, th, tr{
     nav ul{
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 60%;
         height: 90%;
         text-align: center;
         align-items: center;
@@ -178,7 +181,7 @@ table, td, th, tr{
         z-index: 2;
     }
     .nav-closed{
-        transform: translateX(-50%);
+        transform: translateX(-60%);
     }
     .footer{
         font-size: 5vw;
